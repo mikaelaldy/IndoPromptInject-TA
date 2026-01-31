@@ -1,0 +1,177 @@
+IndoPromptInject-TA/
+│
+├── README.md                          # Overview project
+├── .gitignore                         # Ignore API keys, cache, etc
+│
+├── 01_Proposal/                       # TA1 - Proposal
+│   ├── Proposal_TA1_Draft_v1.docx
+│   ├── Proposal_TA1_Draft_v2.docx
+│   ├── Proposal_TA1_Final.docx
+│   ├── Proposal_TA1_Final.pdf         # Yang dikirim ke dosen
+│   ├── Feedback_Dosen_v1.pdf          # Kalau ada feedback
+│   └── Revisi_Log.txt                 # Tracking revisi
+│
+├── 02_Literature/                     # Paper & referensi
+│   ├── papers/
+│   │   ├── IndoSafety_2025.pdf
+│   │   ├── Jailbroken_Wei_2023.pdf
+│   │   ├── DoNotAnswer_Wang_2024.pdf
+│   │   └── ... (paper lainnya)
+│   ├── notes/
+│   │   ├── literature_review.md       # Catatan reading
+│   │   └── taxonomy_notes.md          # Design taxonomy
+│   └── references.bib                 # BibTeX untuk citations
+│
+├── 03_Dataset/                        # Data prompts
+│   ├── raw/
+│   │   ├── pilot_prompts.json         # 20 prompts pilot
+│   │   ├── financial_prompts_v1.json  # Financial category
+│   │   ├── general_prompts_v1.json    # General safety
+│   │   └── multiturn_prompts_v1.json  # Multi-turn attacks
+│   │
+│   ├── processed/
+│   │   ├── dataset_v1.0.json          # Combined 500 prompts
+│   │   ├── dataset_annotated.json     # Dengan annotation lengkap
+│   │   └── dataset_final.json         # Final version untuk publish
+│   │
+│   ├── splits/
+│   │   ├── train.json                 # (jika ada training)
+│   │   ├── val.json
+│   │   └── test.json
+│   │
+│   └── documentation/
+│       ├── dataset_card.md            # HuggingFace dataset card
+│       ├── annotation_guideline.pdf   # Guideline anotasi
+│       └── taxonomy.json              # Taxonomy structure
+│
+├── 04_Code/                           # Semua kode
+│   ├── setup/
+│   │   ├── requirements.txt           # Dependencies
+│   │   ├── setup_env.sh               # Setup script
+│   │   └── config.yaml                # Configuration file
+│   │
+│   ├── data_collection/
+│   │   ├── pilot_test.py              # Pilot testing script
+│   │   ├── generate_variants.py       # LLM-assisted generation
+│   │   ├── manual_crafting.py         # Helper untuk manual prompts
+│   │   └── merge_datasets.py          # Combine semua prompts
+│   │
+│   ├── testing/
+│   │   ├── test_gemini.py             # Gemini 3.0 Flash testing
+│   │   ├── test_gpt.py                # GPT-5.2 testing (manual/API)
+│   │   ├── test_seallm.py             # SeaLLMs testing via HF
+│   │   ├── batch_test.py              # Batch processing semua model
+│   │   └── utils.py                   # Helper functions
+│   │
+│   ├── evaluation/
+│   │   ├── calculate_asr.py           # Calculate ASR metrics
+│   │   ├── harmfulness_scoring.py     # GPT-4o as judge
+│   │   ├── statistical_analysis.py    # Statistical tests
+│   │   └── visualize_results.py       # Generate charts
+│   │
+│   └── notebooks/
+│       ├── 01_pilot_analysis.ipynb    # Analisis pilot test
+│       ├── 02_data_exploration.ipynb  # EDA dataset
+│       ├── 03_results_analysis.ipynb  # Final results analysis
+│       └── 04_visualization.ipynb     # Buat figures untuk paper
+│
+├── 05_Results/                        # Output eksperimen
+│   ├── pilot/
+│   │   ├── pilot_results.json         # Raw results pilot
+│   │   ├── pilot_analysis.xlsx        # Analisis Excel
+│   │   └── pilot_summary.txt          # Summary findings
+│   │
+│   ├── full_test/
+│   │   ├── gemini_results.json        # Gemini responses
+│   │   ├── gpt_results.json           # GPT responses
+│   │   ├── seallm_results.json        # SeaLLMs responses
+│   │   └── combined_results.json      # All models combined
+│   │
+│   ├── metrics/
+│   │   ├── asr_by_model.csv           # ASR per model
+│   │   ├── asr_by_category.csv        # ASR per category
+│   │   ├── asr_by_technique.csv       # ASR per technique
+│   │   └── statistical_tests.txt      # Chi-square, correlation, etc
+│   │
+│   └── figures/
+│       ├── asr_comparison.png         # Bar chart ASR
+│       ├── heatmap_technique_model.png
+│       ├── category_distribution.png
+│       └── ... (semua visualisasi)
+│
+├── 06_Documentation/                  # Dokumentasi penelitian
+│   ├── research_log.md                # Daily research journal
+│   ├── meeting_notes/                 # Notes meeting dengan dosen
+│   │   ├── 2025-01-30_meeting1.md
+│   │   ├── 2025-02-06_meeting2.md
+│   │   └── ...
+│   │
+│   ├── methodology/
+│   │   ├── data_collection_process.md
+│   │   ├── testing_protocol.md
+│   │   └── evaluation_criteria.md
+│   │
+│   └── decisions/
+│       ├── why_sealllm.md             # Justifikasi pilih SeaLLMs
+│       ├── sample_size_decision.md    # Kenapa 500 prompts
+│       └── ethical_considerations.md
+│
+├── 07_Writing/                        # TA2 & TA3
+│   ├── TA2_WorkingPaper/
+│   │   ├── TA2_Draft_v1.docx
+│   │   ├── TA2_Draft_v2.docx
+│   │   ├── TA2_Final.docx
+│   │   ├── TA2_Final.pdf
+│   │   └── figures/                   # Gambar untuk TA2
+│   │
+│   ├── TA3_Publication/
+│   │   ├── article_draft_v1.docx
+│   │   ├── article_draft_v2.docx
+│   │   ├── article_final.docx
+│   │   ├── article_final.pdf
+│   │   ├── cover_letter.txt           # Untuk submit jurnal
+│   │   ├── response_to_reviewers.docx # Kalau ada review
+│   │   └── supplementary_materials/   # Appendix, dataset, dll
+│   │
+│   └── Presentation/
+│       ├── sidang_proposal.pptx       # (jika ada sidang)
+│       ├── sidang_hasil.pptx          # Presentasi hasil
+│       ├── diseminasi.pptx            # Untuk diseminasi internal
+│       └── poster.pdf                 # (jika ada poster session)
+│
+├── 08_Admin/                          # Administrasi
+│   ├── forms/
+│   │   ├── form_pengajuan_ta.pdf
+│   │   ├── form_persetujuan_review.pdf
+│   │   └── form_yudisium.pdf
+│   │
+│   ├── correspondence/
+│   │   ├── email_to_dosen/
+│   │   ├── email_from_journal/
+│   │   └── official_letters/
+│   │
+│   └── certificates/
+│       ├── LOA_journal.pdf            # Letter of Acceptance
+│       ├── diseminasi_certificate.pdf
+│       └── ... (sertifikat lain)
+│
+├── 09_Backup/                         # Backup penting (di Drive)
+│   ├── weekly_backup_2025-01-28/
+│   ├── weekly_backup_2025-02-04/
+│   └── ... (weekly snapshots)
+│
+└── 10_Misc/                           # Lain-lain
+    ├── screenshots/                   # Screenshot hasil menarik
+    ├── inspiration/                   # Contoh dari penelitian lain
+    └── ideas.txt                      # Random ideas & notes
+
+
+# FILE KHUSUS ROOT LEVEL
+
+README.md                              # Project overview
+LICENSE                                # MIT/Apache 2.0
+.gitignore                             # Git ignore rules
+requirements.txt                       # Python dependencies
+config.yaml                            # Global configuration
+CHANGELOG.md                           # Version history
+CONTRIBUTING.md                        # (jika open for contributors)
