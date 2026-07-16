@@ -26,6 +26,7 @@ Tidak boleh membuat angka eksperimen baru. Jika terdapat perbedaan antara prosa 
 
 ## 4. Kontrak Format Progdi
 
+- Acuan utama adalah folder `PANDUAN KP TA PRODI S1 TI` dengan ID Drive `1dOQLG1DI2AQyj5UBdVe-NprGIYSAdknN`, khususnya `Panduan TA S1 TI 2021 - Edisi 2022.pdf`.
 - Ukuran halaman A4.
 - Times New Roman 12 pt untuk naskah utama.
 - Spasi tunggal.
@@ -133,7 +134,17 @@ Simpulan menjawab tujuan penelitian dengan menyebut perbedaan ASR antar model da
 
 Perubahan besar dilakukan dalam beberapa batch yang diverifikasi. Jika satu batch gagal, gunakan indeks dan revisi dokumen terbaru sebelum mencoba kembali; dokumen sumber tetap tidak disentuh.
 
-## 10. Kriteria Selesai
+## 10. Daftar Pustaka dan Sitasi
+
+- Gunakan gaya sitasi numerik dalam kurung siku dan pertahankan urutan berdasarkan kemunculan pertama di teks.
+- Setiap sumber pada daftar pustaka wajib dirujuk di badan artikel; setiap klaim metodologis atau perbandingan terhadap penelitian sebelumnya wajib memiliki sumber.
+- Data hasil eksperimen sendiri tidak diberi sitasi eksternal, tetapi harus dapat ditelusuri ke notebook dan CSV.
+- Pertahankan dan rapikan sumber utama yang sudah digunakan: Transformer, instruction alignment, LLM untuk finansial, PromptInject, jailbreak/safety training, serangan adversarial universal, IndoSafety, Do-Not-Answer, dan red teaming.
+- Tambahkan sumber primer untuk keterbatasan LLM-as-a-judge, indirect prompt injection, dan instruction hierarchy: Zheng et al., `Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena` (arXiv:2306.05685); Greshake et al., `Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection` (arXiv:2302.12173); dan Wallace et al., `The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions` (arXiv:2404.13208).
+- Target minimum adalah 12 sumber primer atau sumber akademik yang relevan. Metadata penulis, judul, tahun, venue, volume, halaman, dan tautan/DOI diperiksa sebelum dimasukkan.
+- Tidak boleh menambahkan referensi yang tidak dipakai hanya untuk memperpanjang daftar pustaka.
+
+## 11. Kriteria Selesai
 
 Naskah dianggap siap dikirim kepada dosen pembimbing jika:
 
@@ -144,5 +155,6 @@ Naskah dianggap siap dikirim kepada dosen pembimbing jika:
 - semua angka dapat ditelusuri ke notebook atau keluaran CSV;
 - metode tidak lagi menyatakan manual override yang belum dilakukan;
 - abstrak, metode, hasil, dan simpulan konsisten;
+- daftar pustaka memuat sekurang-kurangnya 12 sumber yang benar-benar dirujuk dan metadata bibliografinya telah diperiksa;
 - tidak ada placeholder, penomoran rusak, tabel kosong, atau referensi yang tidak dirujuk;
 - salinan Google Doc dapat dibuka dan dibaca kembali setelah seluruh perubahan.
