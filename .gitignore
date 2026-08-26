@@ -1,2 +1,53 @@
-/01_proposal
-/02_literatur
+# ==========================================
+# 1. Security & Credentials (CRITICAL)
+# ==========================================
+.env
+.env.*
+*.env
+*.key
+*.pem
+*secret*
+*credential*
+
+# ==========================================
+# 2. Python & Jupyter Caches / Environments
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# ==========================================
+# 3. IDE, Tooling & Temp Files
+# ==========================================
+.codex_tmp/
+.obsidian/
+.superpowers/
+.vscode/
+.idea/
+*.tmp
+*.log
+
+# ==========================================
+# 4. OS & Office Temporary Locks
+# ==========================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# ==========================================
+# 5. Project Specific
+# ==========================================
+/01_proposal/
+/02_literatur/
+04_code/literatur/*.pdf
