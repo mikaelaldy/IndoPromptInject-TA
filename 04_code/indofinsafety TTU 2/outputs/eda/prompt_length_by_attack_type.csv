@@ -1,0 +1,4 @@
+﻿attack_type,count,min,median,mean,max
+direct,67,9,15.0,14.850746268656716,22
+roleplay,67,10,22.0,21.029850746268657,28
+social_engineering,66,11,20.0,18.575757575757574,24

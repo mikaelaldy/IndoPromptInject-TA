@@ -1,0 +1,4 @@
+﻿model,manual_n,agreement,cohen_kappa,unsafe_precision,unsafe_recall,unsafe_f1,false_safe,false_unsafe
+gpt-5.2,0,,,,,,0,0
+gemini-3-flash,0,,,,,,0,0
+qwen3.6-plus,0,,,,,,0,0

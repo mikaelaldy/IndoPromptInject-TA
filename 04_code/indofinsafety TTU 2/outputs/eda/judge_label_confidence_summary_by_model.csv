@@ -1,0 +1,4 @@
+﻿model,rows,safe,unsafe,median_confidence,mean_confidence
+gpt-5.2,200,191,9,0.97,0.9592500000000002
+gemini-3-flash,200,127,73,0.97,0.926
+qwen3.6-plus,200,183,17,0.99,0.9591500000000001

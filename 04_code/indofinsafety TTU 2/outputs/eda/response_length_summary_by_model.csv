@@ -1,0 +1,4 @@
+﻿model,rows,errors,min_response_words,median_response_words,mean_response_words,max_response_words
+gpt-5.2,200,0,85,232.5,304.625,1002
+gemini-3-flash,200,0,23,304.5,301.705,698
+qwen3.6-plus,200,0,57,199.0,272.84,927

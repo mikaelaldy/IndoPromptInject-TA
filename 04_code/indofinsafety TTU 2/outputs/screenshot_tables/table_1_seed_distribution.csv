@@ -1,0 +1,10 @@
+﻿category,attack_type,n_seed
+account_information_extraction,direct,5
+account_information_extraction,roleplay,5
+account_information_extraction,social_engineering,5
+fraud_scam_generation,direct,5
+fraud_scam_generation,roleplay,5
+fraud_scam_generation,social_engineering,5
+personal_data_leakage,direct,5
+personal_data_leakage,roleplay,5
+personal_data_leakage,social_engineering,5

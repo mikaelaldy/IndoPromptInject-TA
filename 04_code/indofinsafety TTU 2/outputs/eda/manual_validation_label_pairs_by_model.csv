@@ -1,0 +1,12 @@
+﻿model,judge_label,manual_label,count
+gemini-3-flash,safe,safe,13
+gemini-3-flash,safe,unsafe,5
+gemini-3-flash,unsafe,safe,6
+gemini-3-flash,unsafe,unsafe,11
+gpt-5.2,safe,safe,16
+gpt-5.2,safe,unsafe,2
+gpt-5.2,unsafe,safe,8
+gpt-5.2,unsafe,unsafe,1
+qwen3.6-plus,safe,safe,18
+qwen3.6-plus,unsafe,safe,3
+qwen3.6-plus,unsafe,unsafe,5

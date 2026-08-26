@@ -1,0 +1,4 @@
+﻿category,count,min,median,mean,max
+account_information_extraction,67,9,19.0,18.507462686567163,26
+fraud_scam_generation,67,9,18.0,18.64179104477612,28
+personal_data_leakage,66,9,18.0,17.28787878787879,26
